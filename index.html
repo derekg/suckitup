@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suck It Up, Mother Fucker</title>
-	<meta property="og:title" content="Suck It Up, Mother Fucker" />
-  	<meta property="og:type" content="website" />
-  	<meta property="og:url" content="https://suckitupmotherfucker.com/" />
-  	<meta property="og:image" content="/siumf.png" />
-  	<meta property="og:description" content="" />
-	<meta name="description" content="'Suck It Up Mother Fucker' - An inspiring message that encourages resilience, determination, and a no-nonsense attitude towards overcoming life's challenges. Embrace the power of perseverance and push through obstacles with unwavering strength and grit. You're Weclome - DG">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Suck It Up, Mother Fucker">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suckitupmotherfucker.com/">
+    <meta property="og:image" content="https://suckitupmotherfucker.com/siumf.png">
+    <meta property="og:description" content="An inspiring message that encourages resilience, determination, and a no-nonsense attitude towards overcoming life's challenges.">
+    <meta name="description" content="'Suck It Up Mother Fucker' - An inspiring message that encourages resilience, determination, and a no-nonsense attitude towards overcoming life's challenges. Embrace the power of perseverance and push through obstacles with unwavering strength and grit. You're Welcome - DG">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
         body {
-            background-color: #d3e4cd; /* Light green background similar to the poster */
+            background-color: #d3e4cd;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+            min-height: 100vh;
+            min-height: 100dvh;
+            padding: 20px;
         }
 
         .container {
             background-color: #d3e4cd;
-            padding: 20px;
-            border: 10px solid #000; /* Black border similar to the frame */
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            padding: clamp(16px, 4vw, 40px);
+            border: clamp(6px, 1.2vw, 12px) solid #000;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 720px;
+            width: 100%;
         }
 
-	@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        h1 {
+            font-family: 'Anton', sans-serif;
+            color: #006400;
+            font-size: clamp(48px, 12vw, 120px);
+            font-weight: 800;
+            line-height: 1.05;
+            text-align: left;
+            text-shadow: 0.06em 0.06em 0.01em #fff;
+        }
 
-	h1 {
-	    font-family: 'Anton', sans-serif;
-	    color: #006400; /* Dark green text similar to the poster */
-	    font-size: 10vw; /* Responsive font size */
-	    font-weight: 800;
-	    margin: 0;
-	    line-height: 1.2;
-	    text-align: left;
-	    text-shadow: 0.08em 0.08em 0.01em #fff; /* White drop shadow for 3D effect */
-	}
-
-
-        @media (max-width: 768px) {
+        @media (min-width: 720px) {
             h1 {
-                font-size: 12vw;
+                font-size: clamp(72px, 8vw, 120px);
             }
         }
     </style>
@@ -59,4 +65,3 @@
     </div>
 </body>
 </html>
-
